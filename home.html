@@ -41,7 +41,7 @@
       Войти
     </a>
 
-    <a class="header-center__user-nav" href="#" target="_blank"><svg width="10" height="13" viewBox="0 0 10 13"
+    <a class="header__user" href="#" target="_blank"><svg width="10" height="13" viewBox="0 0 10 13"
         fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M6 0.388916H4V12.3889H6V0.388916Z" fill="black" />
         <path d="M2 4.38892H0V12.3889H2V4.38892Z" fill="black" />
@@ -53,37 +53,36 @@
 
     <nav class="main-navigation">
       <ul class="main-navigation__list">
-        <li><a class="main-navigation__link" href="#">Каталог товаров</a>
-          <ul class="main-navigation__products">
-            <a class="main-navigation__item" href="#">
-              <li>Виртуальная реальность</li>
-            </a>
+        <li class="main-navigation__link"><a href="#" target="_blank">Каталог товаров</a></li>
+        <ul class="main-navigation__products">
+          <li class="main-navigation__item"><a href="#">
+              Виртуальная реальность
+            </a></li>
 
-            <a class="main-navigation__item" href="#">
-              <li>Моноподы для cелфи</li>
-            </a>
+          <li class="main-navigation__item"><a href="#">
+              Моноподы для cелфи
+            </a></li>
 
-            <a class="main-navigation__item" href="#">
-              <li>Экшн-камеры</li>
-            </a>
+          <li class="main-navigation__item"><a href="#">
+              Экшн-камеры
+            </a></li>
 
-            <a class="main-navigation__item" href="#">
-              <li>Фитнес-браслеты</li>
-            </a>
+          <li class="main-navigation__item"><a href="#">
+              Фитнес-браслеты
+            </a></li>
 
-            <a class="main-navigation__item" href="#">
-              <li>Умные часы</li>
-            </a>
+          <li class="main-navigation__item"><a href="#">
+              Умные часы
+            </a></li>
 
-            <a class="main-navigation__item" href="#">
-              <li>Квадрокоптеры</li>
-            </a>
-          </ul>
-        </li>
+          <li class="main-navigation__item"><a href="#">
+              Квадрокоптеры
+            </a></li>
+        </ul>
 
-        <li><a class="main-navigation__link" href="#">Доставка</a></li>
-        <li><a class="main-navigation__link" href="#">Гарантия</a></li>
-        <li><a class="main-navigation__link" href="#">Контакты</a></li>
+        <li><a class="main-navigation__link" href="#" target="_blank">Доставка</a></li>
+        <li><a class="main-navigation__link" href="#" target="_blank">Гарантия</a></li>
+        <li><a class="main-navigation__link" href="#" target="_blank">Контакты</a></li>
       </ul>
     </nav>
 
@@ -92,10 +91,8 @@
 
   <section class="hero-slider">
 
-    <span class="hero-slider__number">01</span>
-    <img class="hero-slider__img" src="./img/hero-slider/slider-1.png" alt="квадрокоптер" loading="lazy">
-
     <ul class="hero-slider__list">
+      <img class="hero-slider__img" src="./img/hero-slider/slider-1.png" alt="квадрокоптер" loading="lazy">
       <h2 class="hero-slider__title">Порхает как бабочка, жалит как пчела!</h2>
       <p class="hero-slider__description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
         замаскированным под стандартную камеру.
@@ -112,6 +109,49 @@
           <td>Радиус поражения</td>
         </tr>
       </table>
+      <span class="hero-slider__number">01</span>
+    </ul>
+
+    <ul class="hero-slider__list">
+      <img class="hero-slider__img" src="./img/hero-slider/slider-2.png" alt="фитнес-браслет" loading="lazy">
+      <h2 class="hero-slider__title">Порхает как бабочка, жалит как пчела!</h2>
+      <p class="hero-slider__description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и
+        соблюдать диету.
+      </p>
+      <a class="hero-slider__link" target="_blank" href="#">Подробнее</a>
+      <table class="hero-slider__table">
+        <tr>
+          <th>48 часов</th>
+        </tr>
+
+        <tr>
+          <td>Без подзарядки</td>
+        </tr>
+      </table>
+      <span class="hero-slider__number">02</span>
+    </ul>
+
+    <ul class="hero-slider__list">
+      <img class="hero-slider__img" src="./img/hero-slider/slider-3.png" alt="фитнес-браслет" loading="lazy">
+      <h2 class="hero-slider__title">Делай селфи, как Бен Стиллер! </h2>
+      <p class="hero-slider__description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь,
+        Карл!) метров длиной и весом всего 5 кг.
+      </p>
+      <a class="hero-slider__link" target="_blank" href="#">Подробнее</a>
+      <table class="hero-slider__table">
+        <tr>
+          <th>8,5 м</th>
+          <th>5 кг</th>
+          <th>Карбон</th>
+        </tr>
+
+        <tr>
+          <td>Длина палки</td>
+          <td>Вес палки</td>
+          <td>Материал</td>
+        </tr>
+      </table>
+      <span class="hero-slider__number">03</span>
     </ul>
 
   </section>
