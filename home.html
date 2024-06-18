@@ -121,7 +121,7 @@
       <p class="hero-slider__description">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и
         соблюдать диету.
       </p>
-      <a class="hero-slider__link" target="_blank" href="#">Подробнее</a>
+      <a class="button" target="_blank" href="#">Подробнее</a>
       <table class="hero-slider__table">
         <tr>
           <th>48 часов</th>
@@ -204,7 +204,7 @@
     <h2 class="visually-hidden">Сервис</h2>
     <ul class="service__list">
       <li class="service__item">
-        <button class="service__title service__title--active">Доставка</button>
+        <button class="button">Доставка</button>
         <p class="service__description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно
           бесплатно! Ведь мы неплохо
           заработаем, поднимая его на ваш этаж.</p>
@@ -212,7 +212,7 @@
       </li>
 
       <li class="service__item">
-        <button class="service__title service__title--active">Гарантия</button>
+        <button class="button">Гарантия</button>
         <p class="service__description">Если из-за возгорания купленного у нас товара у вас
           сгорит дом — не переживайте, мы выдадим вам новый.
           Товар, не дом, конечно же.</p>
@@ -220,7 +220,7 @@
       </li>
 
       <li class="service__item">
-        <button class="service__title service__title--active">Кредит</button>
+        <button class="button">Кредит</button>
         <p class="service__description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас
           наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
         <img class="service__icon" src="./img/service/credit.svg" alt="кредит" loading="lazy">
@@ -273,7 +273,7 @@
       <li class="about-us__item"><a href="#">ТоксБерри</a></li>
     </ul>
 
-    <a class="button" href="#">Подробнее о нас</a>
+    <a class="button" href="#" target="_blank">Подробнее о нас</a>
   </section>
 
   <!-- contacts -->
@@ -286,10 +286,27 @@
     <address class="contacts__address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
     <a class="contacts__phone" href="tel:+8128121212">+7 (812) 812-12-12</a>
     <h3 class="contacts__subtitle">Время работы</h3>
-    <p class="contacts__work-time">пн—пт: с 10:00 до 22:00</p>
-    <p class="contacts__work-time">сб—вс: с 10:00 до 19:00</p>
-    <a class="button" href="#">Напишите нам</a>
+    <ul class="contacts__list">
+      <li class="contacts__item">пн—пт: с 10:00 до 22:00</li>
+      <li class="contacts__item">сб—вс: с 10:00 до 19:00</li>
+    </ul>
+    <a class="button" href="#" target="_blank">Напишите нам</a>
   </section>
+
+  <section class="">
+    <h2 class="">Подпишитесь на рассылку</h2>
+    <p class="">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции,
+      спецпредложения и вот это вот всё.</p>
+    <form action="#" method="post">
+      <input class="" type="email" type="email" id="email" name="email" placeholder="Ваш e-mail">
+      <button class="" type="submit">Подписаться</button>
+      <svg class="" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M15.998 1L6.39805 10.3L1.99805 6V10.7L6.49805 15L15.998 5.7V1Z" fill="#08AF00" />
+      </svg>
+      <label for="">Это бесплатно</label>
+    </form>
+  </section>
+
 </body>
 
 </html>
