@@ -8,6 +8,8 @@
 </head>
 
 <body>
+
+  <!-- header -->
   <header class="header">
 
     <a class="header__logotype" href="./index.html">
@@ -35,10 +37,8 @@
           </clipPath>
         </defs>
       </svg>
-      <span class="header__link"></span>
+      <span class="header__link">Войти</span>
     </a>
-
-    <a class="header__exit" href="./home.html">Выйти</a>
 
     <a class="header__user" href="#" target="_blank">
       <svg width="10" height="13" viewBox="0 0 10 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -54,39 +54,43 @@
 
     <nav class="main-navigation">
       <ul class="main-navigation__list">
-        <li class="main-navigation__link"><a href="#" target="_blank">Каталог товаров</a></li>
-        <ul class="main-navigation__products">
-          <li class="main-navigation__item"><a href="#">
-              Виртуальная реальность
-            </a></li>
+        <li class="main-navigation__link"><a href="#" target="_blank">Каталог товаров</a>
+          <ul class="main-navigation__products">
+            <li class="main-navigation__item"><a href="#">
+                Виртуальная реальность
+              </a></li>
 
-          <li class="main-navigation__item"><a href="#">
-              Моноподы для cелфи
-            </a></li>
+            <li class="main-navigation__item"><a href="#">
+                Моноподы для cелфи
+              </a></li>
 
-          <li class="main-navigation__item"><a href="#">
-              Экшн-камеры
-            </a></li>
+            <li class="main-navigation__item"><a href="#">
+                Экшн-камеры
+              </a></li>
 
-          <li class="main-navigation__item"><a href="#">
-              Фитнес-браслеты
-            </a></li>
+            <li class="main-navigation__item"><a href="#">
+                Фитнес-браслеты
+              </a></li>
 
-          <li class="main-navigation__item"><a href="#">
-              Умные часы
-            </a></li>
+            <li class="main-navigation__item"><a href="#">
+                Умные часы
+              </a></li>
 
-          <li class="main-navigation__item"><a href="#">
-              Квадрокоптеры
-            </a></li>
-        </ul>
+            <li class="main-navigation__item"><a href="#">
+                Квадрокоптеры
+              </a></li>
+          </ul>
+        </li>
+
 
         <li><a class="main-navigation__link" href="#" target="_blank">Доставка</a></li>
         <li><a class="main-navigation__link" href="#" target="_blank">Гарантия</a></li>
         <li><a class="main-navigation__link" href="#" target="_blank">Контакты</a></li>
+
       </ul>
     </nav>
   </header>
+
 
   <section class="catalog">
     <h1 class="visually-hidden">Каталог</h1>
@@ -130,7 +134,28 @@
   <main class="main">
 
     <section>
-      <h2 class="main__title">Фильтр:</h2>
+      <aside class="aside">
+        <h2 class="aside">Фильтр:</h2>
+        <form class="aside__form" action="#" method="post">
+          <label class="aside__label">Стоимость</label>
+          <input class="aside__range"  type="range" value="range" min="1" max="5000" oninput="this.nextElementSibling.value = this.value">
+          <output>2568</output>
+
+          <label>Цвет</label>
+          <input type="checkbox">Черный
+          <input type="checkbox">Белый
+          <input type="checkbox">Синий
+          <input type="checkbox">Красный
+          <input type="checkbox">Розовый
+
+          <label>Bluetooth</label>
+          <input type="radio" name="bluetooth" value="yes" checked>Есть
+          <input type="radio" name="bluetooth" value="no">Нет
+
+          <button class="button" type="submit">Показать</button>
+        </form>
+      </aside>
+
     </section>
 
   </main>
