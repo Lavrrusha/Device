@@ -92,10 +92,10 @@
   </header>
 
 
-  <section class="catalog">
+  <section class="bread-crumbs">
     <h1 class="visually-hidden">Каталог</h1>
-    <h2 class="catalog__title">Моноподы для селфи</h2>
-    <ul class="bread-crumbs">
+    <h2 class="bread-crumbs__title">Моноподы для селфи</h2>
+    <ul class="bread-crumbs__list">
       <li class="bread-crumbs__link"><a href="#">Главная</a></li>
       <button class="bread-crumbs__icon"><svg width="4" height="7" viewBox="0 0 4 7" fill="none"
           xmlns="http://www.w3.org/2000/svg">
@@ -131,21 +131,49 @@
           <input class="aside__range"  type="range" value="1" min="1" max="5000" oninput="this.nextElementSibling.value = this.value">
           <output>1</output>
 
-          <label>Цвет</label>
+          <label class="aside__label">Цвет</label>
           <input type="checkbox" checked>Черный
           <input type="checkbox" checked>Белый
           <input type="checkbox">Синий
           <input type="checkbox">Красный
           <input type="checkbox">Розовый
 
-          <label>Bluetooth</label>
+          <label class="aside__label">Bluetooth</label>
           <input type="radio" name="bluetooth" value="yes" checked>Есть
           <input type="radio" name="bluetooth" value="no">Нет
 
           <button class="button" type="submit">Показать</button>
         </form>
       </aside>
+    </section>
 
+    <section class="catalog">
+      <h2 class="catalog__"></h2>
+      <ul class="catalog__list">
+        <li class="catalog__item">
+          <img class="catalog__image" src="./img/catalog/selfie-stick-amateur.jpg" alt="Любительская селфи-палка" width="360" loading="lazy">
+          <h3 class="catalog__title">Любительская селфи-палка</h3>
+          <span class="catalog__price">500 ₽</span>
+        </li>
+
+        <li class="catalog__item">
+          <img class="catalog__image" src="./img/catalog/selfie-stick-amateur.jpg" alt="Профессиональная селфи-палка" width="360" loading="lazy">
+          <h3 class="catalog__title">Любительская селфи-палка</h3>
+          <span class="catalog__price">1 500 ₽</span>
+        </li>
+
+        <li class="catalog__item">
+          <img class="catalog__image" src="./img/catalog/selfie-stick-amateur.jpg" alt="Непотопляемая селфи-палка" width="360" loading="lazy">
+          <h3 class="catalog__title">Любительская селфи-палка</h3>
+          <span class="catalog__price">2 500 ₽</span>
+        </li>
+
+        <li class="catalog__item">
+          <img class="catalog__image" src="./img/catalog/selfie-stick-amateur.jpg" alt="Любительская селфи-палка" width="360" loading="lazy">
+          <h3 class="catalog__title">Селфи-палка «Следуй за мной»</h3>
+          <span class="catalog__price">1 500 ₽</span>
+        </li>
+      </ul>
     </section>
 
   </main>
