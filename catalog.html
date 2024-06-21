@@ -125,10 +125,11 @@
 
     <section>
       <aside class="aside">
-        <h2 class="aside">Фильтр:</h2>
+        <h2 class="aside">фильтр:</h2>
         <form class="aside__form" action="#" method="post">
           <label class="aside__label">Стоимость</label>
-          <input class="aside__range"  type="range" value="1" min="1" max="5000" oninput="this.nextElementSibling.value = this.value">
+          <input class="aside__range" type="range" value="1" min="1" max="5000"
+            oninput="this.nextElementSibling.value = this.value">
           <output>1</output>
 
           <label class="aside__label">Цвет</label>
@@ -148,28 +149,46 @@
     </section>
 
     <section class="catalog">
-      <h2 class="catalog__"></h2>
+      <h2 class="catalog__sorting">cортировка:</h2>
+      <svg class="catalog__icon" width="31" height="30" viewBox="0 0 31 30" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M15.4934 17.825L19.3408 13.325C19.5864 13.025 19.5864 12.525 19.3408 12.225C19.0952 11.925 18.6859 11.925 18.4404 12.225L15.0023 16.225L11.5642 12.225C11.3186 11.925 10.9093 11.925 10.6637 12.225C10.5819 12.425 10.5 12.625 10.5 12.825C10.5 13.025 10.5819 13.225 10.6637 13.325L14.5111 17.825C14.8385 18.125 15.166 18.125 15.4934 17.825Z"
+          fill="black" />
+      </svg>
+      <label class="catalog__label">Популярные</label>
+      <select class="catalog__select" name="select" id="select">
+        <option class="catalog__option" value="rating">Высокий рейтинг</option>
+        <option class="catalog__option" value="cheaply">Дешевле</option>
+        <option class="catalog__option" value="more-expensive">Дороже</option>
+        <option class="catalog__option" value="new">Новинки</option>
+        <option class="catalog__option" value="beneficial">Выгодные</option>
+      </select>
       <ul class="catalog__list">
         <li class="catalog__item">
-          <img class="catalog__image" src="./img/catalog/selfie-stick-amateur.jpg" alt="Любительская селфи-палка" width="360" loading="lazy">
+          <img class="catalog__image" src="./img/catalog/selfie-stick-amateur.jpg" alt="Любительская селфи-палка"
+            width="360" loading="lazy">
           <h3 class="catalog__title">Любительская селфи-палка</h3>
           <span class="catalog__price">500 ₽</span>
         </li>
 
         <li class="catalog__item">
-          <img class="catalog__image" src="./img/catalog/selfie-stick-amateur.jpg" alt="Профессиональная селфи-палка" width="360" loading="lazy">
+          <img class="catalog__image" src="./img/catalog/selfie-stick-professional.jpg"
+            alt="Профессиональная селфи-палка" width="360" loading="lazy">
           <h3 class="catalog__title">Любительская селфи-палка</h3>
           <span class="catalog__price">1 500 ₽</span>
         </li>
 
         <li class="catalog__item">
-          <img class="catalog__image" src="./img/catalog/selfie-stick-amateur.jpg" alt="Непотопляемая селфи-палка" width="360" loading="lazy">
+          <img class="catalog__image" src="./img/catalog/selfie-stick-unsinkable.jpg" alt="Непотопляемая селфи-палка"
+            width="360" loading="lazy">
           <h3 class="catalog__title">Любительская селфи-палка</h3>
           <span class="catalog__price">2 500 ₽</span>
         </li>
 
         <li class="catalog__item">
-          <img class="catalog__image" src="./img/catalog/selfie-stick-amateur.jpg" alt="Любительская селфи-палка" width="360" loading="lazy">
+          <img class="catalog__image" src="./img/catalog/selfie-stick-hand.jpg" alt="Селфи-палка «Следуй за мной"
+            width="360" loading="lazy">
           <h3 class="catalog__title">Селфи-палка «Следуй за мной»</h3>
           <span class="catalog__price">1 500 ₽</span>
         </li>
