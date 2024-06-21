@@ -149,21 +149,29 @@
     </section>
 
     <section class="catalog">
-      <h2 class="catalog__sorting">cортировка:</h2>
-      <svg class="catalog__icon" width="31" height="30" viewBox="0 0 31 30" fill="none"
-        xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M15.4934 17.825L19.3408 13.325C19.5864 13.025 19.5864 12.525 19.3408 12.225C19.0952 11.925 18.6859 11.925 18.4404 12.225L15.0023 16.225L11.5642 12.225C11.3186 11.925 10.9093 11.925 10.6637 12.225C10.5819 12.425 10.5 12.625 10.5 12.825C10.5 13.025 10.5819 13.225 10.6637 13.325L14.5111 17.825C14.8385 18.125 15.166 18.125 15.4934 17.825Z"
-          fill="black" />
-      </svg>
-      <label class="catalog__label">Популярные</label>
-      <select class="catalog__select" name="select" id="select">
-        <option class="catalog__option" value="rating">Высокий рейтинг</option>
-        <option class="catalog__option" value="cheaply">Дешевле</option>
-        <option class="catalog__option" value="more-expensive">Дороже</option>
-        <option class="catalog__option" value="new">Новинки</option>
-        <option class="catalog__option" value="beneficial">Выгодные</option>
-      </select>
+
+      <form class="catalog__form" action="#" method="post">
+        <label class="catalog__sorting">cортировка:</label>
+        <label class="catalog__label">Популярные</label>
+        <select class="catalog__select" name="select" id="select">
+          <option class="catalog__option" value="rating">Высокий рейтинг</option>
+          <option class="catalog__option" value="cheaply">Дешевле</option>
+          <option class="catalog__option" value="more-expensive">Дороже</option>
+          <option class="catalog__option" value="new">Новинки</option>
+          <option class="catalog__option" value="beneficial">Выгодные</option>
+        </select>
+
+        <button type="submit"><svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <g opacity="0.2" clip-path="url(#clip0_67428_689)">
+              <path d="M15 10L20.5 20H9.5" fill="black"/>
+            </g>
+            <defs>
+            </defs>
+          </svg>
+        </button>
+      </form>
+
       <ul class="catalog__list">
         <li class="catalog__item">
           <img class="catalog__image" src="./img/catalog/selfie-stick-amateur.jpg" alt="Любительская селфи-палка"
@@ -196,6 +204,25 @@
     </section>
 
   </main>
+
+    <!-- footer -->
+
+    <footer class="footer">
+      <a class="footer__logotype" href="./index.html"></a>
+      <address class="footer__address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
+      <ul class="footer__navigation-list">
+        <li class="footer__link"><a href="#">Доставка</a></li>
+
+        <li class="footer__link"><a href="#">Гарантия</a></li>
+
+        <li class="footer__link"><a href="#">Контакты</a></li>
+      </ul>
+
+      <a class="footer__phone" href="tel:+7128121212">+7 (812) 812-12-12</a>
+
+      <a href="https://htmlacademy.ru/" target="_blank"><img src="./img/logotype-footer.jpg"
+          alt="картинка с ссылкой ведущей на сайт"></a>
+    </footer>
 </body>
 
 </html>
