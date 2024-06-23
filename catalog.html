@@ -122,28 +122,28 @@
   <main class="main">
 
     <!-- aside -->
-      <aside class="aside">
-        <form class="aside__form" action="#" method="post">
-          <h2 class="aside__title">фильтр:</h2>
-          <label class="aside__label">Стоимость</label>
-          <input class="aside__range" type="range" value="1" min="1" max="5000"
-            oninput="this.nextElementSibling.value = this.value">
-          <output>1</output>
+    <aside class="aside">
+      <form class="aside__form" action="#" method="post">
+        <h2 class="aside__title">фильтр:</h2>
+        <label class="aside__label">Стоимость</label>
+        <input class="aside__range" type="range" value="1" min="1" max="5000"
+          oninput="this.nextElementSibling.value = this.value">
+        <output>1</output>
 
-          <label class="aside__label">Цвет</label>
-          <input type="checkbox" checked>Черный
-          <input type="checkbox" checked>Белый
-          <input type="checkbox">Синий
-          <input type="checkbox">Красный
-          <input type="checkbox">Розовый
+        <label class="aside__label">Цвет</label>
+        <input type="checkbox" checked>Черный
+        <input type="checkbox" checked>Белый
+        <input type="checkbox">Синий
+        <input type="checkbox">Красный
+        <input type="checkbox">Розовый
 
-          <label class="aside__label">Bluetooth</label>
-          <input type="radio" name="bluetooth" value="yes" checked>Есть
-          <input type="radio" name="bluetooth" value="no">Нет
+        <label class="aside__label">Bluetooth</label>
+        <input type="radio" name="bluetooth" value="yes" checked>Есть
+        <input type="radio" name="bluetooth" value="no">Нет
 
-          <button class="button" type="submit">Показать</button>
-        </form>
-      </aside>
+        <button class="button" type="submit">Показать</button>
+      </form>
+    </aside>
 
     <!-- catalog -->
 
@@ -160,14 +160,14 @@
           <option class="catalog__option" value="beneficial">Выгодные</option>
         </select>
 
-        <label class="visually-hidden">По возрастанию</label>
+        <span class="visually-hidden">По возрастанию</span>
         <button class="catalog__icon" type="button">
           <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M6 0L11.5 10H0.5" fill="black" />
           </svg>
         </button>
 
-        <label class="visually-hidden">По убыванию</label>
+        <span class="visually-hidden">По убыванию</span>
         <button class="catalog__icon" type="button">
           <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g opacity="0.2" clip-path="url(#clip0_67428_693)">
@@ -181,34 +181,52 @@
 
       <ul class="catalog__list">
         <li class="catalog__item">
-          <img class="catalog__image" src="./img/catalog/selfie-stick-amateur.jpg" alt="Любительская селфи-палка"
-            width="360" loading="lazy">
-          <h3 class="catalog__title">Любительская селфи-палка</h3>
-          <span class="catalog__price">500 ₽</span>
+          <a href="#"><img class="catalog__image" src="./img/catalog/selfie-stick-amateur.jpg"
+              alt="Любительская селфи-палка" width="360" loading="lazy">
+            <h3 class="catalog__title">Любительская селфи-палка</h3>
+            <span class="catalog__price">500 ₽</span>
+          </a>
         </li>
 
         <li class="catalog__item">
-          <img class="catalog__image" src="./img/catalog/selfie-stick-professional.jpg"
-            alt="Профессиональная селфи-палка" width="360" loading="lazy">
-          <h3 class="catalog__title">Любительская селфи-палка</h3>
-          <span class="catalog__price">1 500 ₽</span>
+          <a href="#"><img class="catalog__image" src="./img/catalog/selfie-stick-professional.jpg"
+              alt="Профессиональная селфи-палка" width="360" loading="lazy">
+            <h3 class="catalog__title">Любительская селфи-палка</h3>
+            <span class="catalog__price">1 500 ₽</span>
+          </a>
         </li>
 
         <li class="catalog__item">
-          <img class="catalog__image" src="./img/catalog/selfie-stick-unsinkable.jpg" alt="Непотопляемая селфи-палка"
-            width="360" loading="lazy">
-          <h3 class="catalog__title">Любительская селфи-палка</h3>
-          <span class="catalog__price">2 500 ₽</span>
+          <a href="#"><img class="catalog__image" src="./img/catalog/selfie-stick-unsinkable.jpg"
+              alt="Непотопляемая селфи-палка" width="360" loading="lazy">
+            <h3 class="catalog__title">Любительская селфи-палка</h3>
+            <span class="catalog__price">2 500 ₽</span>
+          </a>
         </li>
 
         <li class="catalog__item">
-          <img class="catalog__image" src="./img/catalog/selfie-stick-hand.jpg" alt="Селфи-палка «Следуй за мной"
-            width="360" loading="lazy">
-          <h3 class="catalog__title">Селфи-палка «Следуй за мной»</h3>
-          <span class="catalog__price">1 500 ₽</span>
+          <a href="#"><img class="catalog__image" src="./img/catalog/selfie-stick-hand.jpg"
+              alt="Селфи-палка «Следуй за мной" width="360" loading="lazy">
+            <h3 class="catalog__title">Селфи-палка «Следуй за мной»</h3>
+            <span class="catalog__price">1 500 ₽</span>
+          </a>
         </li>
       </ul>
       <a class="catalog__button" href="#">Загрузить ещё</a>
+    </section>
+
+    <section class="pagination">
+      <a class="pagination__button" href="#">Назад</a>
+
+      <ul class="pagination__list">
+        <li class="pagination__link"><a href="#">1</a></li>
+        <li class="pagination__link"><a href="#">2</a></li>
+        <li class="pagination__link"><a href="#">3</a></li>
+        <li class="pagination__link"><a>...</a></li>
+        <li class="pagination__link"><a href="#">15</a></li>
+      </ul>
+
+      <a class="pagination__button" href="#">Вперёд</a>
     </section>
 
   </main>
