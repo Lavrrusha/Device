@@ -4,19 +4,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Страница товаров DIVACE</title>
+  <title>Страница товаров DEVACE</title>
 </head>
 
 <body>
 
-  <!-- header -->
+  <!-- шапка -->
   <header class="header">
 
     <a class="header__logotype" href="./index.html">
-      <img src="./img/logotype.jpg" alt="Логотип" loading="lazy">
+      <img src="./img/logotype.jpg" alt="Логотип Devace" width="145" height="36" loading="lazy">
     </a>
 
-    <form class="header__form" action="#" method="post">
+    <form class="header__form" action="#" method="get">
 
       <input class="header__search" type="search" id="search" name="search" placeholder="Текст поиска">
 
@@ -34,7 +34,7 @@
         <defs>
         </defs>
       </svg>
-      <span class="header__link">Войти</span>
+      <span>Войти</span>
     </a>
 
     <a class="header__user" href="#" target="_blank">
@@ -43,47 +43,50 @@
         <path d="M2 4.38892H0V12.3889H2V4.38892Z" fill="black" />
         <path d="M10 3.38892H8V12.3889H10V3.38892Z" fill="black" />
       </svg>
-      <span class="header__link">Сравнить</span>
+      <span>Сравнить</span>
     </a>
 
-
-    <span><a class="header__basket" href="#" target="_blank">Корзина</a></span>
+    <a class="header__basket" href="#" target="_blank">Корзина
+      <span class="header__counter">2</span>
+      <span>Корзина</span>
+    </a>
 
     <nav class="main-navigation">
       <ul class="main-navigation__list">
-        <li class="main-navigation__link"><a href="#" target="_blank">Каталог товаров</a>
-          <ul class="main-navigation__products">
-            <li class="main-navigation__item"><a href="#">
-                Виртуальная реальность
-              </a></li>
+        <li class="main-navigation__item">
+          <a class="main-navigation__link" href="#" target="_blank">Каталог товаров</a>
 
-            <li class="main-navigation__item"><a href="#">
-                Моноподы для cелфи
-              </a></li>
+          <!-- подкатегории списка меню -->
+          <ul class="main-navigation__sub-list">
+            <li class="main-navigation__sub-item">
+              <a class="main-navigation__sub-link" href="#">Виртуальная реальность</a>
+            </li>
 
-            <li class="main-navigation__item"><a href="#">
-                Экшн-камеры
-              </a></li>
+            <li class="main-navigation__sub-item">
+              <a class="main-navigation__sub-link" href="#">Моноподы для cелфи</a>
+            </li>
 
-            <li class="main-navigation__item"><a href="#">
-                Фитнес-браслеты
-              </a></li>
+            <li class="main-navigation__sub-item">
+              <a class="main-navigation__sub-link" href="#">Экшн-камеры</a>
+            </li>
 
-            <li class="main-navigation__item"><a href="#">
-                Умные часы
-              </a></li>
+            <li class="main-navigation__sub-item">
+              <a class="main-navigation__sub-link" href="#">Фитнес-браслеты</a>
+            </li>
 
-            <li class="main-navigation__item"><a href="#">
-                Квадрокоптеры
-              </a></li>
+            <li class="main-navigation__sub-item">
+              <a class="main-navigation__sub-link" href="#">Умные часы</a>
+            </li>
+
+            <li class="main-navigation__sub-item">
+              <a class="main-navigation__sub-link" href="#">Квадрокоптеры</a>
+            </li>
           </ul>
         </li>
 
-
-        <li><a class="main-navigation__link" href="#" target="_blank">Доставка</a></li>
-        <li><a class="main-navigation__link" href="#" target="_blank">Гарантия</a></li>
-        <li><a class="main-navigation__link" href="#" target="_blank">Контакты</a></li>
-
+        <li class="main-navigation__item"><a class="main-navigation__link" href="#">Доставка</a></li>
+        <li class="main-navigation__item"><a class="main-navigation__link" href="#">Гарантия</a></li>
+        <li class="main-navigation__item"><a class="main-navigation__link" href="#">Контакты</a></li>
       </ul>
     </nav>
   </header>
@@ -94,28 +97,39 @@
     <h1 class="visually-hidden">Каталог</h1>
     <h2 class="bread-crumbs__title">Моноподы для селфи</h2>
     <ul class="bread-crumbs__list">
-      <li class="bread-crumbs__link"><a href="#">Главная</a></li>
-      <li class="bread-crumbs__icon"><button><svg width="4" height="7" viewBox="0 0 4 7" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <g opacity="0.2" clip-path="url(#clip0_67384_760)">
-              <path
-                d="M3.79999 3.09995L0.799994 0.0999512C0.599994 -0.100049 0.299994 -0.100049 0.0999939 0.0999512C-6.10203e-06 0.299951 -6.10203e-06 0.699951 0.0999939 0.899951L2.69999 3.49995L0.0999939 6.09995C-6.10203e-06 6.29995 -6.10203e-06 6.59995 0.0999939 6.79995C0.199994 6.89995 0.399994 6.99995 0.499994 6.99995C0.599994 6.99995 0.799994 6.89995 0.899994 6.89995L3.89999 3.89995C3.89999 3.79995 3.99999 3.59995 3.99999 3.49995C3.99999 3.39995 3.89999 3.19995 3.79999 3.09995Z"
-                fill="black" />
-            </g>
-          </svg>
-        </button></li>
-      <li class="bread-crumbs__link"><a href="#">Каталог товаров</a></li>
-      <li class="bread-crumbs__icon"><button><svg width="4" height="7" viewBox="0 0 4 7" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <g opacity="0.2" clip-path="url(#clip0_67384_760)">
-              <path
-                d="M3.79999 3.09995L0.799994 0.0999512C0.599994 -0.100049 0.299994 -0.100049 0.0999939 0.0999512C-6.10203e-06 0.299951 -6.10203e-06 0.699951 0.0999939 0.899951L2.69999 3.49995L0.0999939 6.09995C-6.10203e-06 6.29995 -6.10203e-06 6.59995 0.0999939 6.79995C0.199994 6.89995 0.399994 6.99995 0.499994 6.99995C0.599994 6.99995 0.799994 6.89995 0.899994 6.89995L3.89999 3.89995C3.89999 3.79995 3.99999 3.59995 3.99999 3.49995C3.99999 3.39995 3.89999 3.19995 3.79999 3.09995Z"
-                fill="black" />
-            </g>
-          </svg>
-        </button></li>
+      <li class="bread-crumbs__link">
+        <a href="#">Главная</a>
+      </li>
 
-      <li class="bread-crumbs__link"><a href="#">Моноподы для селфи</a></li>
+      <li class="bread-crumbs__icon"><button><svg width="4" height="7" viewBox="0 0 4 7" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <g opacity="0.2" clip-path="url(#clip0_67384_760)">
+              <path
+                d="M3.79999 3.09995L0.799994 0.0999512C0.599994 -0.100049 0.299994 -0.100049 0.0999939 0.0999512C-6.10203e-06 0.299951 -6.10203e-06 0.699951 0.0999939 0.899951L2.69999 3.49995L0.0999939 6.09995C-6.10203e-06 6.29995 -6.10203e-06 6.59995 0.0999939 6.79995C0.199994 6.89995 0.399994 6.99995 0.499994 6.99995C0.599994 6.99995 0.799994 6.89995 0.899994 6.89995L3.89999 3.89995C3.89999 3.79995 3.99999 3.59995 3.99999 3.49995C3.99999 3.39995 3.89999 3.19995 3.79999 3.09995Z"
+                fill="black" />
+            </g>
+          </svg>
+        </button>
+      </li>
+
+      <li class="bread-crumbs__link">
+        <a href="#">Каталог товаров</a>
+      </li>
+
+      <li class="bread-crumbs__icon"><button><svg width="4" height="7" viewBox="0 0 4 7" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <g opacity="0.2" clip-path="url(#clip0_67384_760)">
+              <path
+                d="M3.79999 3.09995L0.799994 0.0999512C0.599994 -0.100049 0.299994 -0.100049 0.0999939 0.0999512C-6.10203e-06 0.299951 -6.10203e-06 0.699951 0.0999939 0.899951L2.69999 3.49995L0.0999939 6.09995C-6.10203e-06 6.29995 -6.10203e-06 6.59995 0.0999939 6.79995C0.199994 6.89995 0.399994 6.99995 0.499994 6.99995C0.599994 6.99995 0.799994 6.89995 0.899994 6.89995L3.89999 3.89995C3.89999 3.79995 3.99999 3.59995 3.99999 3.49995C3.99999 3.39995 3.89999 3.19995 3.79999 3.09995Z"
+                fill="black" />
+            </g>
+          </svg>
+        </button>
+      </li>
+
+      <li class="bread-crumbs__link">
+        <a href="#">Моноподы для селфи</a>
+      </li>
     </ul>
   </section>
 
@@ -182,7 +196,7 @@
       <ul class="catalog__list">
         <li class="catalog__item">
           <a href="#"><img class="catalog__image" src="./img/catalog/selfie-stick-amateur.jpg"
-              alt="Любительская селфи-палка" width="360" loading="lazy">
+              alt="Любительская селфи-палка" width="360" height="380" loading="lazy">
             <h3 class="catalog__title">Любительская селфи-палка</h3>
             <span class="catalog__price">500 ₽</span>
           </a>
@@ -190,7 +204,7 @@
 
         <li class="catalog__item">
           <a href="#"><img class="catalog__image" src="./img/catalog/selfie-stick-professional.jpg"
-              alt="Профессиональная селфи-палка" width="360" loading="lazy">
+              alt="Профессиональная селфи-палка" width="360" height="380" loading="lazy">
             <h3 class="catalog__title">Любительская селфи-палка</h3>
             <span class="catalog__price">1 500 ₽</span>
           </a>
@@ -198,7 +212,7 @@
 
         <li class="catalog__item">
           <a href="#"><img class="catalog__image" src="./img/catalog/selfie-stick-unsinkable.jpg"
-              alt="Непотопляемая селфи-палка" width="360" loading="lazy">
+              alt="Непотопляемая селфи-палка" width="360" height="380" loading="lazy">
             <h3 class="catalog__title">Любительская селфи-палка</h3>
             <span class="catalog__price">2 500 ₽</span>
           </a>
@@ -206,7 +220,7 @@
 
         <li class="catalog__item">
           <a href="#"><img class="catalog__image" src="./img/catalog/selfie-stick-hand.jpg"
-              alt="Селфи-палка «Следуй за мной" width="360" loading="lazy">
+              alt="Селфи-палка «Следуй за мной" width="360" height="380" loading="lazy">
             <h3 class="catalog__title">Селфи-палка «Следуй за мной»</h3>
             <span class="catalog__price">1 500 ₽</span>
           </a>
@@ -231,7 +245,7 @@
 
   </main>
 
-  <!-- footer -->
+  <!-- подвал -->
 
   <footer class="footer">
     <a class="footer__logotype" href="./index.html"></a>
@@ -247,8 +261,10 @@
     <a class="footer__phone" href="tel:+7128121212">+7 (812) 812-12-12</a>
 
     <a href="https://htmlacademy.ru/" target="_blank"><img src="./img/logotype-footer.jpg"
-        alt="картинка с ссылкой ведущей на сайт"></a>
+        alt="картинка с ссылкой ведущей на сайт" width="115" height="33" loading="lazy"></a>
   </footer>
 </body>
 
 </html>
+h
+height="380"
