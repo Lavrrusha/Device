@@ -91,119 +91,151 @@
     </nav>
   </header>
 
-  <!-- хлебные крошки -->
-
-  <section class="bread-crumbs">
-    <h2 class="bread-crumbs__title">Моноподы для селфи</h2>
-    <ul class="bread-crumbs__list">
-      <li class="bread-crumbs__link">
-        <a href="#">Главная</a>
-      </li>
-
-      <li class="bread-crumbs__icon"><button><svg width="4" height="7" viewBox="0 0 4 7" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <g opacity="0.2" clip-path="url(#clip0_67384_760)">
-              <path
-                d="M3.79999 3.09995L0.799994 0.0999512C0.599994 -0.100049 0.299994 -0.100049 0.0999939 0.0999512C-6.10203e-06 0.299951 -6.10203e-06 0.699951 0.0999939 0.899951L2.69999 3.49995L0.0999939 6.09995C-6.10203e-06 6.29995 -6.10203e-06 6.59995 0.0999939 6.79995C0.199994 6.89995 0.399994 6.99995 0.499994 6.99995C0.599994 6.99995 0.799994 6.89995 0.899994 6.89995L3.89999 3.89995C3.89999 3.79995 3.99999 3.59995 3.99999 3.49995C3.99999 3.39995 3.89999 3.19995 3.79999 3.09995Z"
-                fill="black" />
-            </g>
-          </svg>
-        </button>
-      </li>
-
-      <li class="bread-crumbs__link">
-        <a href="#">Каталог товаров</a>
-      </li>
-
-      <li class="bread-crumbs__icon"><button><svg width="4" height="7" viewBox="0 0 4 7" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <g opacity="0.2" clip-path="url(#clip0_67384_760)">
-              <path
-                d="M3.79999 3.09995L0.799994 0.0999512C0.599994 -0.100049 0.299994 -0.100049 0.0999939 0.0999512C-6.10203e-06 0.299951 -6.10203e-06 0.699951 0.0999939 0.899951L2.69999 3.49995L0.0999939 6.09995C-6.10203e-06 6.29995 -6.10203e-06 6.59995 0.0999939 6.79995C0.199994 6.89995 0.399994 6.99995 0.499994 6.99995C0.599994 6.99995 0.799994 6.89995 0.899994 6.89995L3.89999 3.89995C3.89999 3.79995 3.99999 3.59995 3.99999 3.49995C3.99999 3.39995 3.89999 3.19995 3.79999 3.09995Z"
-                fill="black" />
-            </g>
-          </svg>
-        </button>
-      </li>
-
-      <li class="bread-crumbs__link">
-        <a href="#">Моноподы для селфи</a>
-      </li>
-    </ul>
-  </section>
-
-  <main class="main">
-
-    <!-- aside -->
-    <aside class="aside">
-      <form class="aside__form" action="#" method="post">
-        <h2 class="aside__title">фильтр:</h2>
-        <label class="aside__label">Стоимость</label>
-        <input class="aside__range" type="range" value="1" min="1" max="5000"
-          oninput="this.nextElementSibling.value = this.value">
-        <output>1</output>
-
-        <label class="aside__label">Цвет</label>
-        <input type="checkbox" checked>Черный
-        <input type="checkbox" checked>Белый
-        <input type="checkbox">Синий
-        <input type="checkbox">Красный
-        <input type="checkbox">Розовый
-
-        <label class="aside__label">Bluetooth</label>
-        <input type="radio" name="bluetooth" value="yes" checked>Есть
-        <input type="radio" name="bluetooth" value="no">Нет
-
-        <button class="button" type="submit">Показать</button>
-      </form>
-    </aside>
-
-    <!-- каталог -->
+  <main>
 
     <section class="catalog">
 
-      <form class="catalog__form" action="#" method="post">
-        <label class="catalog__sorting">cортировка:</label>
-        <label class="catalog__label">Популярные</label>
-        <select class="catalog__select" name="select" id="select">
-          <option class="catalog__option" value="rating">Высокий рейтинг</option>
-          <option class="catalog__option" value="cheaply">Дешевле</option>
-          <option class="catalog__option" value="more-expensive">Дороже</option>
-          <option class="catalog__option" value="new">Новинки</option>
-          <option class="catalog__option" value="beneficial">Выгодные</option>
-        </select>
+      <h1 class="catalog__title title">Моноподы для селфи</h1>
 
-        <span class="visually-hidden">По возрастанию</span>
-        <button class="catalog__icon" type="button">
-          <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M6 0L11.5 10H0.5" fill="black" />
-          </svg>
-        </button>
+      <!-- Хлебные крошки  -->
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="#">Главная</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="#">Каталог товаров</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link">Моноподы для селфи</a>
+        </li>
+      </ul>
 
-        <span class="visually-hidden">По убыванию</span>
-        <button class="catalog__icon" type="button">
-          <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g opacity="0.2" clip-path="url(#clip0_67428_693)">
-              <path d="M6 10L0.499999 9.61651e-07L11.5 0" fill="black" />
-            </g>
-            <defs>
-            </defs>
-          </svg>
-        </button>
-      </form>
+      <!-- Сортировка каталога  -->
+      <div class="catalog__filter filter">
 
+        <h2 class="filter__title">Фильтр:</h2>
+
+        <form class="filter__form" action="#" method="post">
+          <!-- Стоимость  -->
+          <fieldset class="filter__group">
+            <legend class="filter__label">Стоимость</legend>
+
+            <div class="filter-range">
+              <!-- Ползунки -->
+              <div class="range-controls">
+                <!-- Прогресс-бар -->
+                <div class="scale">
+                  <!-- выбранный диапазон -->
+                  <div class="bar"></div>
+                </div>
+                <!-- ползунки  -->
+                <div class="toggle  toggle-min"></div>
+                <div class="toggle  toggle-max"></div>
+
+              </div>
+              <!-- Вывод диапазона цен -->
+              <div class="price-controls">
+                <label class="min-price">от <input name="min-price" type="number" value="0"></label>
+                <label class="max-price">до <input name="max-price" type="number" value="5000"></label>
+              </div>
+
+            </div>
+
+          </fieldset>
+
+          <!-- Цвет  -->
+          <fieldset class="filter__group ">
+            <legend class="filter__label">Цвет</legend>
+
+            <input class="visually-hidden" type="checkbox" name="color-black" id="filter-col-black" value="Чёрный"
+              checked>
+            <label class="filter__color-label" for="filter-col-black">Чёрный</label>
+
+            <input class="visually-hidden" type="checkbox" name="color-white" id="filter-col-white" value="Белый"
+              checked>
+            <label class="filter__color-label" for="filter-col-white">Белый</label>
+
+            <input class="visually-hidden" type="checkbox" name="color-blue" id="filter-col-blue" value="Синий">
+            <label class="filter__color-label" for="filter-col-blue">Синий</label>
+
+            <input class="visually-hidden" type="checkbox" name="color-red" id="filter-col-red" value="Красный">
+            <label class="filter__color-label" for="filter-col-red">Красный</label>
+
+            <input class="visually-hidden" type="checkbox" name="color-pink" id="filter-col-pink" value="Розовый">
+            <label class="filter__color-label" for="filter-col-pink">Розовый</label>
+          </fieldset>
+
+          <!-- Bluetooth  -->
+          <fieldset class="filter__group">
+            <legend class="filter__label">Bluetooth</legend>
+
+            <input class="visually-hidden" type="radio" name="Bluetooth" id="filter-radio-yes" value="Bluetooth Есть"
+              checked>
+            <label class="filter__color-label" for="filter-radio-yes">Есть</label>
+
+            <input class="visually-hidden" type="radio" name="Bluetooth" id="filter-radio-no" value="Bluetooth Нет">
+            <label class="filter__color-label" for="filter-radio-no">Нет</label>
+          </fieldset>
+
+          <!-- Кнпока фильтра  -->
+          <button class="filter__button button" type="submit">Показать</button>
+        </form>
+      </div>
+
+      <!-- Порядок сортировки каталога -->
+      <div class="catalog__order">
+        <h3 class="catalog__order-title">Сортировка:</h3>
+
+        <form class="catalog__form" action="#" method="post">
+
+          <label class="catalog__label">Популярные</label>
+          <select class="catalog__select" name="select" id="select">
+            <option class="catalog__option" value="rating">Высокий рейтинг</option>
+            <option class="catalog__option" value="cheaply">Дешевле</option>
+            <option class="catalog__option" value="more-expensive">Дороже</option>
+            <option class="catalog__option" value="new">Новинки</option>
+            <option class="catalog__option" value="beneficial">Выгодные</option>
+          </select>
+
+
+          <button class="catalog__icon" type="button">
+            <span class="visually-hidden">По возрастанию</span>
+            <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 0L11.5 10H0.5" fill="black" />
+            </svg>
+          </button>
+
+          <button class="catalog__icon" type="button">
+            <span class="visually-hidden">По убыванию</span>
+            <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g opacity="0.2" clip-path="url(#clip0_67428_693)">
+                <path d="M6 10L0.499999 9.61651e-07L11.5 0" fill="black" />
+              </g>
+              <defs>
+              </defs>
+            </svg>
+          </button>
+        </form>
+
+      </div>
+
+      <!-- Список карточек товаров  -->
       <ul class="catalog__list">
         <li class="catalog__item">
-          <a href="#"><img class="catalog__image" src="./img/catalog/selfie-stick-amateur.jpg"
-              alt="Любительская селфи-палка" width="360" height="380" loading="lazy">
+          <a href="#">
+            <img class="catalog__image" src="./img/catalog/selfie-stick-amateur.jpg" alt="Любительская селфи-палка"
+              width="360" loading="lazy">
             <h3 class="catalog__title">Любительская селфи-палка</h3>
             <span class="catalog__price">500 ₽</span>
+
+            <span class="button">Подробнее</span>
+
           </a>
         </li>
 
         <li class="catalog__item">
           <a href="#"><img class="catalog__image" src="./img/catalog/selfie-stick-professional.jpg"
-              alt="Профессиональная селфи-палка" width="360" height="380" loading="lazy">
+              alt="Профессиональная селфи-палка" width="360" loading="lazy">
             <h3 class="catalog__title">Любительская селфи-палка</h3>
             <span class="catalog__price">1 500 ₽</span>
           </a>
@@ -211,7 +243,7 @@
 
         <li class="catalog__item">
           <a href="#"><img class="catalog__image" src="./img/catalog/selfie-stick-unsinkable.jpg"
-              alt="Непотопляемая селфи-палка" width="360" height="380" loading="lazy">
+              alt="Непотопляемая селфи-палка" width="360" loading="lazy">
             <h3 class="catalog__title">Любительская селфи-палка</h3>
             <span class="catalog__price">2 500 ₽</span>
           </a>
@@ -219,30 +251,47 @@
 
         <li class="catalog__item">
           <a href="#"><img class="catalog__image" src="./img/catalog/selfie-stick-hand.jpg"
-              alt="Селфи-палка «Следуй за мной" width="360" height="380" loading="lazy">
+              alt="Селфи-палка «Следуй за мной" width="360" loading="lazy">
             <h3 class="catalog__title">Селфи-палка «Следуй за мной»</h3>
             <span class="catalog__price">1 500 ₽</span>
           </a>
         </li>
       </ul>
+
       <a class="catalog__button" href="#">Загрузить ещё</a>
-    </section>
 
-    <section class="pagination">
-      <a class="pagination__button" href="#">Назад</a>
+      <!-- Пагинация  -->
+      <div class="pagination">
+        <ul class="pagination__list">
+          <li class="pagination__item">
+            <a class="pagination__link pagination__link--prew" href="#">Назад</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">1</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">2</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">3</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link">...</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">15</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link pagination__link--next" href="#">Вперёд</a>
+          </li>
+        </ul>
 
-      <ul class="pagination__list">
-        <li class="pagination__link"><a href="#">1</a></li>
-        <li class="pagination__link"><a href="#">2</a></li>
-        <li class="pagination__link"><a href="#">3</a></li>
-        <li class="pagination__link"><a>...</a></li>
-        <li class="pagination__link"><a href="#">15</a></li>
-      </ul>
+      </div>
 
-      <a class="pagination__button" href="#">Вперёд</a>
     </section>
 
   </main>
+
 
   <!-- подвал -->
 
@@ -276,4 +325,3 @@
 </body>
 
 </html>
-
